@@ -14,6 +14,8 @@ bikeshare_2.py chicago.csv new_york_city.csv washington.csv
 Pandas.DataFrame API reference:
 https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html
 
-Python Calendar refernce:
+Python Calendar reference:
 https://docs.python.org/3/library/calendar.html
 
+Numpy reference:
+https://docs.scipy.org/doc/numpy/reference/
