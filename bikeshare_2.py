@@ -214,8 +214,6 @@ def raw_data(df):
             data = df.iloc[range:range+5]
             print(data)
             range += 5
-            print("\nThis took %s seconds." % (time.time() - start_time))
-            print('-' * 40)
         else:
             print("Please enter YES/NO.")
 
