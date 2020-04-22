@@ -20,10 +20,11 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
+    city_ary = ["chicago", "new york city", "washington"]
     while True:
         city = input("Please enter city (Chicago, New York City, Washington) that you would like to see the data "
                      "from: \n").lower()
-        if city == "chicago" or city == "new york city" or city == "washington":
+        if city in city_ary:
             break
         else:
             print("Please enter city name in the options.")
@@ -214,8 +215,6 @@ def raw_data(df):
             data = df.iloc[range:range+5]
             print(data)
             range += 5
-            print("\nThis took %s seconds." % (time.time() - start_time))
-            print('-' * 40)
         else:
             print("Please enter YES/NO.")
 
